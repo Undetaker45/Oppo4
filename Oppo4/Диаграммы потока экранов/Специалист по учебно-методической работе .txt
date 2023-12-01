@@ -33,13 +33,12 @@ settingsWindow : Пользователь может:
 settingsWindow : -Изменить поля\n настроек занятия
 
 [*] --> loginWindow
-loginWindow -left-> homeWindow : Нажата кнопка вход
-homeWindow -left-> trainingplanWindow : Нажата кнопка\n разработка плана обучения
+loginWindow -up-> homeWindow : Нажата кнопка вход
+homeWindow -> trainingplanWindow : Нажата кнопка\n разработка плана обучения
 homeWindow -up-> cursWindow : Нажата кнопка\n просмотреть готовые занятия
 homeWindow -down-> profileWindow : Нажата кнопка\n профиля
 trainingplanWindow -up-> settingsWindow : Нажата кнопка\n настройки занятия
 cursWindow -> settingsWindow : Нажата кнопка изменение\n занятия
 homeWindow -left->[*] : Окно закрыто
-profileWindow -> loginWindow : Нажата кнопка выход
 
 @enduml

@@ -6,7 +6,7 @@ left to right direction
 
 actor "Администратор" as fc
 
-usecase "Войти/выйти в/из систему(ы)" as UC1
+usecase "Войти в систему" as UC1
 usecase "Добавить пользователя" as UC2
 usecase "Удалить пользователя" as UC3
 
@@ -24,7 +24,7 @@ left to right direction
 
 actor "Специалист по\n учебно-методической\n работе " as fc
 
-usecase "Войти/выйти в/из систему(ы)" as UC1
+usecase "Войти в систему" as UC1
 usecase "Составить программу обучения" as UC2
 usecase "Просмотреть готовые занятия" as UC3
 
@@ -42,7 +42,7 @@ left to right direction
 
 actor "Преподаватель " as fc
 
-usecase "Войти/выйти в/из систему(ы)" as UC1
+usecase "Войти в систему" as UC1
 usecase "Просмотреть свои занятия" as UC2
 
 
@@ -53,14 +53,15 @@ fc --> UC2
 @enduml
 
 //Слушатель (Основные возможности) ----------------------------------------------
+
 @startuml
 
 left to right direction
 
 actor "Слушатель " as fc
 
-usecase "Войти/выйти в/из систему(ы)" as UC1
-usecase "Просмотреть свои занятия." as UC2
+usecase "Войти в систему" as UC1
+usecase "Просмотреть свои занятия" as UC2
 
 
 fc --> UC1

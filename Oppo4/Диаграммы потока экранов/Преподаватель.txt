@@ -23,13 +23,11 @@ profileWindow : -Просмотреть свои ФИО
 profileWindow : -Просмотреть свой номер телефона
 profileWindow : -Просмотреть свой стаж работы
 profileWindow : -Просмотреть свою специальность
-profileWindow : -Выйти из сессии
 
 [*] --> loginWindow
-loginWindow -left-> homeWindow : Нажата кнопка вход
+loginWindow -> homeWindow : Нажата кнопка вход
 homeWindow -up-> cursWindow : Нажата кнопка\n просмотреть мои занятия
 homeWindow -down-> profileWindow : Нажата кнопка\n профиля
 homeWindow -right->[*] : Окно закрыто
-profileWindow -> loginWindow : Нажата кнопка выход
 
 @enduml

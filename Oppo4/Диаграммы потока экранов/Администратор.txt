@@ -20,18 +20,17 @@ addWindow : -Заполнить необходимые данные
 addWindow : -Зарегистрировать пользователя
 
 delWindow : Пользователь может:
-delWindow : -Выбрать нужных пользователей\n и удалить их
+delWindow : -Заполнить нужные поля\n для удаления пользователя
+delWindow : -Удалить пользователя
 
 profileWindow : Пользователь может:
 profileWindow : -Просмотреть свои ФИО
-profileWindow : -Выйти из сессии
 
-[*] --> loginWindow
-loginWindow -left-> homeWindow : Нажата кнопка вход
+[*] -up-> loginWindow
+loginWindow -up-> homeWindow : Нажата кнопка вход
 homeWindow -left-> addWindow : Нажата кнопка\n добавить пользователя
 homeWindow -up-> delWindow : Нажата кнопка\n удалить пользователя
 homeWindow -down-> profileWindow : Нажата кнопка\n профиля
 homeWindow -right->[*] : Окно закрыто
-profileWindow -> loginWindow : Нажата кнопка выход
 
 @enduml
